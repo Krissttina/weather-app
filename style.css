@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #093347, #14664d);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.conteiner{
+    width: 300px;
+    color: white;   
+}
+
+.search-bar {
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+button:hover {
+    background: #d8cdcde7;
+  }
+
+.city{
+    padding: 0 2px;
+}
+
+.temp{
+    padding: 15px 2px;
+    font-size: 50px;
+}
+
+.description{
+    padding: 5px 2px;
+    font-size: 25px;
+}
+
+.wind{
+    padding: 5px 2px;
+    font-size: 15px;
+}
