@@ -9,11 +9,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="conteiner">
-        <div class="search">
-            <input type="text" class="search-bar" placeholder="Search">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-          </div>
+  <section id="intro-container">
+    <h1>Enter name here:</h1>
+    <input type="time" placeholder="Location">
+    <button>Search</button>
+  </section>
+    <section class="conteiner">
+      <div class="search">
+        <input type="text" class="search-bar" placeholder="Search">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
           <div class="search-bar">
             <h2 class="city">Weather in Sofia</h2>
             <h1 class="temp">15°C</h1>
@@ -21,9 +26,9 @@
             <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" width="80px"/>
               <div class="description">Cloudy</div>
             </div>
-            <div class="wind">Wind speed: 6.2 km/h</div>
+            <div>Wind speed: <p id="wind"></p></div>
           </div>
-    </div>
+    </section>
 </body>
 <script src="script.js"></script>
 </html>
