@@ -53,14 +53,28 @@ button:hover {
 
 /*second section*/
 .conteiner{
+    display: none;
     width: 253px;
     padding: 27px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.5); 
 }
 
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    display: none;
+}
+
+.body{
+    display: none;
+    text-align: center;
+}
+
 .city{
-    padding: 5px;
+    padding: 20px;
 }
 
 .temp{
@@ -76,4 +90,14 @@ button:hover {
 .wind{
     padding: 5px 2px;
     font-size: 15px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.det{
+    display: flex;
+    align-items: center;
 }

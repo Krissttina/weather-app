@@ -5,33 +5,40 @@
     <title>Weather side</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!--<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">-->
-    <script src="https://kit.fontawesome.com/420ba10640.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/420ba10640.js" crossorigin="anonymous"></script>    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="intro-container"hidden>
+  <section class="intro-container">
     <h1>Enter city name:</h1>
     <span>
       <input type="text" class="search-bar-intro" placeholder="Location">
       <button><i class="fa-solid fa-magnifying-glass"></i></button>
     </span>
-    
   </section>
-    <section class="conteiner" >
-      <div class="search">
-        <input type="text" class="search-bar" placeholder="Search">
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-      </div>
-          <div class="search-bar">
-            <h2 class="city">Weather in Sofia</h2>
-            <h1 class="temp">15°C</h1>
-            <div class="flex">
-            <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" width="80px"/>
-              <div class="description">Cloudy</div>
-            </div>
-            <div>Wind speed: <p id="wind"></p></div>
-          </div>
-    </section>
+
+  <section class="conteiner">
+    <!--Search bar-->
+    <div class="search">
+      <input type="text" class="search-bar" placeholder="Search">
+      <button class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <!--Error message-->
+    <div class="error">
+      <p>Invalid city name!</p>
+    </div>
+    <!--Body-->
+    <div class="body">
+        <h3 class="description"></h3>
+        <img class="weatherImg" src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" width="80px"/>
+        <h1 class="temp"></h1>
+        <h2 class="city"></h2>
+      <!--Details-->
+      <div class="details">
+        <div class="det">Humidity:<p class="humidity"></p><img src="img/humidity.png" alt="" width="20px"/></div>
+        <div class="det">Wind:<p class="wind"></p><img src="img/wind.png" alt="" width="20px"/></div>
+       </div>
+    </div>
+  </section>
 </body>
 <script src="script.js"></script>
 </html>

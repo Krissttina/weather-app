@@ -1,3 +1,3 @@
 ### Weather-app
 
-![weather-app](weather-app-UI.png)
+![weather-app](img/weather-app-UI.png)
