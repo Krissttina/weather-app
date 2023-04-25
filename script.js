@@ -1,5 +1,3 @@
-
-
 //server data
 const apiKey = "9625ea697bfb8e08c25b88e663545b6c";
 const apiUrl =
@@ -14,8 +12,8 @@ const weatherImg = document.querySelector(".weatherImg");
 async function checkWeather(city) {
   const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
 
-  //check for server error
-  if (response.status == 404) {
+  //check for server error or empty
+  if (response.status == 404 || response.status == 400) {
     error.style.display = "block";
     body.style.display = "none";
   } else {
@@ -53,4 +51,5 @@ async function checkWeather(city) {
 searchBtn.addEventListener("click", () => {
   checkWeather(searchBar.value);
   searchBar.value = "";
+  document.querySelector('.intro-text').remove()
 });

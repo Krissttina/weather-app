@@ -12,22 +12,15 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-/*first section*/
-.intro-container{
-    width: 203px;
-    padding: 40px;
+.conteiner{
+    width: 253px;
+    padding: 27px;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5); 
 }
 
-.intro-container h1{
+.intro-text{
     margin-bottom: 15px;
-}
-
-span{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
 }
 
 input {
@@ -49,15 +42,6 @@ button{
 
 button:hover {
     background: #ffffffc2;
-}
-
-/*second section*/
-.conteiner{
-    display: none;
-    width: 253px;
-    padding: 27px;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.5); 
 }
 
 .error{
