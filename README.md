@@ -1,5 +1,7 @@
 ### Weather-app
 
+~You can try live demo by clicking on 'github-pages' in Environment ->
+
 This project has very simple and cleaned UI.
 For the background is used linear color gradient with **D3FFF7** and **2F5E72**(HEX).
 For the container background color is used **white** with  50% decreased opacity.
